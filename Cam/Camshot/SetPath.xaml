@@ -1,0 +1,56 @@
+﻿<Window x:Class="Camshot.SetPath"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SaveTo" Height="243" Width="741" 
+        ResizeMode="NoResize" ShowInTaskbar="False"  WindowStartupLocation="CenterScreen" Topmost="True" Background="#FFDDDDDD">
+  
+    <Grid Height="201" Width="719">
+       
+        <TabControl Height="201" HorizontalAlignment="Left" Name="tabControl1" VerticalAlignment="Top" Width="727">
+            <TabItem Header="Images" Name="tabItem1">
+                <Grid Height="175" Width="715">
+                    <TextBlock Height="20" HorizontalAlignment="Left" Margin="12,2,0,0" Name="textBlock1" Text="Current Directory: " VerticalAlignment="Top" Width="99" />
+                    <Button 
+                        Content="Browse And Save" 
+                        Height="23" 
+                        HorizontalAlignment="Left" 
+                        Margin="530,37,0,0" 
+                        Name="button1" 
+                        VerticalAlignment="Top"
+                        Width="97" Click="button1_Click"
+                        Foreground="Black" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="12,35,0,0" Name="textBox1" VerticalAlignment="Top" Width="500" BorderBrush="Black" />
+                    <!--<Separator Height="2" HorizontalAlignment="Left" Margin="12,101,0,0" Name="separator2" VerticalAlignment="Top" Width="500" />-->
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="12,118,0,0" Name="textBox2" VerticalAlignment="Top" Width="500" BorderBrush="Black" />
+                    <TextBlock Height="22" HorizontalAlignment="Left" Margin="12,81,0,0" Name="textBlock2" Text="Temporary Directory: " VerticalAlignment="Top" Width="118" />
+                    <Separator Height="19" HorizontalAlignment="Left" Margin="12,67,0,0" Name="separator3" VerticalAlignment="Top" Width="703" Background="Black" />
+                    <Button Content="Reset" Height="23" HorizontalAlignment="Left"
+                            Margin="638,37,0,0" Name="button3" 
+                            VerticalAlignment="Top" Width="64" 
+                            Click="button3_Click" 
+                            Foreground="Black" />
+                </Grid>
+            </TabItem>
+      
+            <TabItem Header="Videos" Name="tabItem2">
+                <Grid Height="175" Width="715">
+                    <TextBlock Height="20"
+                               HorizontalAlignment="Left" 
+                               Margin="12,2,0,0" 
+                               Name="textBlock3" 
+                               Text="Current Directory: "
+                               VerticalAlignment="Top"
+                               Width="99" />
+                    <Button Content="Browse And Save" Height="23" HorizontalAlignment="Left" Margin="530,37,0,0" Name="button2" VerticalAlignment="Top" Width="97" Click="button2_Click" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="12,35,0,0" Name="textBox3" VerticalAlignment="Top" Width="500" BorderBrush="Black" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="12,118,0,0" Name="textBox4" VerticalAlignment="Top" Width="500" BorderBrush="Black" />
+                    <TextBlock Height="22" HorizontalAlignment="Left" Margin="12,81,0,0" Name="textBlock4" Text="Temporary Directory: " VerticalAlignment="Top" Width="118" />
+                    <Separator Height="19" HorizontalAlignment="Left" Margin="12,67,0,0" Name="separator6" VerticalAlignment="Top" Width="703" Background="Black" />
+                    <Button Content="Reset" Height="23" HorizontalAlignment="Left" Margin="638,37,0,0" Name="button4" VerticalAlignment="Top" Width="64" Click="button4_Click" />
+                </Grid>
+
+            </TabItem>
+        </TabControl>
+        
+    </Grid>
+</Window>

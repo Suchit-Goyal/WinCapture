@@ -1,0 +1,17 @@
+﻿<Window x:Class="Camshot.SpyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SpyWindow" Height="0" Width="0"
+          
+        WindowStyle="None" 
+        Opacity="1"    
+  
+       
+        Topmost="False" Visibility="Hidden">
+  
+    <Canvas x:Name="cnv">
+        <Canvas  Name="canvas1"  />
+        <TextBlock Canvas.Left="69" Canvas.Top="22" Height="32" Name="handle" Width="155" />
+        <TextBlock Canvas.Left="69" Canvas.Top="60" Height="30" Name="caption"  Width="155" />
+    </Canvas>
+</Window>
